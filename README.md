@@ -18,4 +18,4 @@ python3 -m http.server 8000
 
 Then open <http://localhost:8000>.
 
-Pushing to `main` redeploys the site.
+After pushing to `main`, run **Deploy site to GitHub Pages** from the Actions tab if the site does not update. When you change `assets/styles.css`, bump the `?v=` number on its `<link>` in every page so browsers fetch the new file.
