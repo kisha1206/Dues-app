@@ -68,8 +68,8 @@
     <li><strong>Subscription status:</strong> if you buy Premium, Google Play or the App Store tells us which plan you have and whether it's active. We never see your payment card details.</li>
   </ul>
 
-  <h3>Voice input</h3>
-  <p>When you add a bill by voice, your speech is converted to text on your device. On Android, the bill details are also extracted from that text on your device. On iPhone, the text transcript (not the audio recording) may be sent to our server, which uses an AI service to extract the bill name, amount and date and returns them to the app. Audio recordings never leave your device, and the transcript is used only to fill in the bill.</p>
+  <h3>Voice input and the AI assistant</h3>
+  <p>When you add a bill by voice, your speech is converted to text on your device, and the bill name, amount and date are picked out of that text on your device too. Audio recordings and transcripts are not sent to us. On Android, the in-app AI assistant runs entirely on your device (using Google's on-device Gemini Nano model where your phone supports it); your questions and its answers are not sent to our servers or to any AI service.</p>
 
   <h2 id="use">2. How we use it</h2>
   <ul>
@@ -91,7 +91,6 @@
       <tr><td>Google Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging, Analytics, Crashlytics)</td><td>Sign-in, storing and syncing your data, profile photos, notifications, usage statistics, crash reports</td></tr>
       <tr><td>Google Play Billing / Apple App Store</td><td>Processing and verifying subscriptions</td></tr>
       <tr><td>Google Sign-In / Sign in with Apple</td><td>Signing in, if you choose these options</td></tr>
-      <tr><td>AI text-processing service (iPhone voice entry only)</td><td>Extracting bill details from a voice transcript</td></tr>
     </tbody>
   </table>
   </div>
@@ -104,7 +103,7 @@
   <ul>
     <li><strong>Notifications:</strong> to remind you before bills are due.</li>
     <li><strong>Microphone and speech recognition:</strong> for adding bills by voice.</li>
-    <li><strong>Contacts (iPhone):</strong> to pick people to split a bill with. Only the contacts you choose are saved; your address book is not uploaded.</li>
+    <li><strong>Contacts:</strong> to pick people to split a bill with. On Android you choose one contact at a time from the system picker, so the app never gets access to your address book. On iPhone the app asks for Contacts permission. Either way, only the contacts you pick are saved, and your address book is not uploaded.</li>
     <li><strong>Photos:</strong> to set a profile photo, you pick one with your device&#39;s photo picker. The app receives only the photo you choose, not your photo library.</li>
   </ul>
 
@@ -129,7 +128,7 @@
   <p>Data is encrypted in transit (HTTPS/TLS) and at rest on Google Cloud. Access rules on our database ensure that only you, and the people you've shared a bill or household with, can read your data. No system is perfectly secure, so please keep your sign-in details and device safe.</p>
 
   <h2 id="children">8. Children</h2>
-  <p>Dues is not directed at children under 13 (or the minimum age in your country), and we don't knowingly collect their data. If you believe a child has given us personal data, contact us and we'll delete it.</p>
+  <p>Dues is intended for adults aged 18 and over. It is not directed at children, and we don't knowingly collect data from anyone under 18. If you believe a child has given us personal data, contact us and we'll delete it.</p>
 
   <h2 id="changes">9. Changes to this policy</h2>
   <p>We may update this policy as the app changes. We'll post the new version here with a new effective date and, for significant changes, tell you in the app.</p>
